@@ -1,17 +1,17 @@
 #include <stdio.h>
 #include <iostream>
 #include <iomanip>
-#include <string>
 using namespace std;
 
 int main() {
 
-    string a, b, c; // to cansando de usar abc e xyz :(
-    cin >> a;
-    cin >> b;
-    cin >> c;
-    cout << "A = " << a << ", B = " << b << ", C = " << c << endl;
-    cout << "A = " << b << ", B = " << c << ", C = " << a << endl;
-    cout << "A = " << c << ", B = " << a << ", C = " << b << endl;
+    int ao_contrario, contrario_ao; // to cansando de usar abc e xyz :(
+
+    cin >> ao_contrario;
+    cin.ignore();
+    cin >> contrario_ao;
+
+    cout << contrario_ao << "." << ao_contrario << endl;
+
     return 0;
 }
