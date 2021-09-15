@@ -6,8 +6,8 @@ using namespace std;
 
 int main() {
 
-    double a, b;
-    float c, d; // to cansando de usar abc e xyz :(
+    float a, b;
+    double c, d; // to cansando de usar abc e xyz :(
     cin >> a;
     cin >> b;
     cin >> c;
@@ -19,4 +19,4 @@ int main() {
     cout << fixed << setprecision(3) << scientific << uppercase << "A = " << a << ", B = " << b << endl << "C = " << c << ", D = " << d << endl; 
     cout << fixed << setprecision(0) << "A = " << a << ", B = " << b << endl << "C = " << c << ", D = " << d << endl; 
     return 0;
-}
+}   
