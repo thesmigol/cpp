@@ -1,0 +1,34 @@
+#include <iostream>
+#include <iomanip>
+#include <math.h>
+#include <string>
+using namespace std;
+
+
+
+int ehPerfeito(int num){
+  for(int i = 1; i < num; i++){
+	  int aux = 0;
+            if(num%i == 0){
+                   aux += i;
+                   if(aux > num) break;
+				   return true;
+            }
+			
+    }
+}
+
+int main(void) 
+{ 
+	int i,n,num; 
+	cin >> n; 
+	for(i=0; i<n; i++) 
+	{ 
+		cin >> num; 
+		if (ehPerfeito(num)) 
+			cout << num << " eh perfeito" << endl; 
+		else 
+			cout << num << " nao eh perfeito" << endl; // aqui tava faltando um <<
+	} 
+	return 0; 
+} 

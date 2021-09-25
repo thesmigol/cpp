@@ -5,23 +5,20 @@
 using namespace std;
 
 int main() {
-        int LINHA;
-        char OPERACAO;
-        double M[12][12];
-        double soma = 0.0;
-cout << fixed << setprecision(1);
-cin >> OPERACAO;    
-        for(int i = 0; i < 12; i++){
-        for(int o = 0; o < 12; o++){
-cin >> M[i][o];
-        if(o < 11 - i){
-soma += M[i][o];
-                }
+        int VELOCIDADE_DO_MOTOR, R[256];
+        bool CHK = true;
+cin >> VELOCIDADE_DO_MOTOR;
+        for(int i = 0; i < VELOCIDADE_DO_MOTOR; i++){
+cin >> R[i]; 
+}
+        for(int i = 0; i < VELOCIDADE_DO_MOTOR - 1; i++){
+        if(R[i+1] < R[i]){
+CHK = false;
+cout << i + 2 << endl;
+        break;
         }
 }
-        if(OPERACAO == 'S')
-cout << soma << endl;
-        if(OPERACAO == 'M')
-cout << soma/66.0 << endl;
+        if(CHK)
+cout << 0 << endl;
 return 0;
 }
