@@ -7,19 +7,22 @@ using namespace std;
 
 
 int ehPerfeito(int num){
-  for(int i = 1; i < num; i++){
-	  int aux = 0;
-            if(num%i == 0){
-                   aux += i;
-                   if(aux > num) break;
-				   return true;
-            }
-			
+	  int soma = 0;
+
+for (int i = 1; i < num; i++){
+      if (num % i == 0){
+        soma += i;
+      }
     }
+    if ( soma == num){
+     return true;
+    }else{
+      return false;
+    }
+
 }
 
-int main(void) 
-{ 
+int main(void){ 
 	int i,n,num; 
 	cin >> n; 
 	for(i=0; i<n; i++) 
